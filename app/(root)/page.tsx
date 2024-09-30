@@ -1,9 +1,27 @@
+import HeaderBox from '@/components/HeaderBox'
+import TotalBalanceBox from '@/components/TotalBalanceBox'
 import React from 'react'
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
+    const loggedIn = {firstName: 'Emmanuel'}
+
+    return (
+        <section className='home'>
+            <div className='home-content'>
+                <header className='home-header'>
+                    <HeaderBox
+                        type= "greeting" 
+                        title="Welcome" 
+                        user={loggedIn?.firstName || 'Guest'}
+                        subtext="Access and manage your account and ransactions
+                        efficiently."
+                    />
+                    <TotalBalanceBox />
+                </header>
+            </div>
+        </section>
+    )
 }
 
 export default Home
+ 
