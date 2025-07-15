@@ -17,7 +17,7 @@ const Home = () => {
                         efficiently."
                     />
                     <TotalBalanceBox
-                    accounts={[]}
+                    accounts={[]} 
                     totalBanks= {1}
                     totalCurrentBalance= {1250.35}
                     />

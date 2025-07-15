@@ -15,4 +15,5 @@ const HeaderBox = ({type = 'title', title, subtext, user}: HeaderBoxProps)  => {
   )
 }
 
+
 export default HeaderBox
