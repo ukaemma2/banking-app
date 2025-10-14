@@ -1,6 +1,6 @@
-import { formatAmount } from '@/lib/utils'
-import { Section } from 'lucide-react'
+
 import React from 'react'
+import AnimatedCounter from './AnimatedCounter'
 
 const TotalBalanceBox = ({accounts = [], totalBanks, totalCurrentBalance
 }: TotalBalanceBoxProps) => {
@@ -20,7 +20,8 @@ const TotalBalanceBox = ({accounts = [], totalBanks, totalCurrentBalance
                         Total Current Balance
                     </p>
                     <p className='total-balance-amount flex-center gap-2'>
-                        {formatAmount (totalCurrentBalance)}
+                        <AnimatedCounter amount={totalCurrentBalance}/>
+                        
                     </p>
                 </div>
             </div>
