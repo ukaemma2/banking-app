@@ -16,7 +16,7 @@ export const formatDateTime = (dateString: Date) => {
     day: "numeric", // numeric day of the month (e.g., '25')
     hour: "numeric", // numeric hour (e.g., '8')
     minute: "numeric", // numeric minute (e.g., '30')
-    hour12: true, // use 12-hour clock (true) or 24-hour clock (false)
+    hour12: true, // use 12-hour clock (true) or 24-hour clock (false) more changes
   };
 
   const dateDayOptions: Intl.DateTimeFormatOptions = {
@@ -70,7 +70,7 @@ export const formatDateTime = (dateString: Date) => {
 export function formatAmount(amount: number): string {
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency: "USD",
+    currency: "NGN",
     minimumFractionDigits: 2,
   });
 
