@@ -4,10 +4,13 @@ import CountUp from "react-countup"
 
 const  AnimatedCounter = ({amount}: {amount: number}) => {
   return (
-    <div>
+    <div className="w-full">
         <p>
-            <CountUp end={amount}/>
-        </p>
+            <CountUp
+            decimal=""
+            prefix="NGN"
+             end={amount}/>
+        </p> 
     </div>
   )
 }
